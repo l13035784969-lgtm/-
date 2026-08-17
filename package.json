@@ -1,0 +1,15 @@
+{
+  "name": "trip-planner",
+  "private": true,
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "api:dev": "pnpm --filter api start:dev",
+    "api:build": "pnpm --filter api build",
+    "api:test": "pnpm --filter api test",
+    "miniapp:dev": "pnpm --filter miniapp dev:weapp",
+    "miniapp:build": "pnpm --filter miniapp build:weapp"
+  }
+}

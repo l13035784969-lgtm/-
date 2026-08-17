@@ -1,0 +1,78 @@
+@import '../../styles/tokens.scss';
+
+.trip-list-page {
+  min-height: 100vh;
+  background: $color-paper;
+  padding-bottom: 40px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 32px 16px;
+}
+
+.header-title {
+  font-size: 38px;
+  font-weight: 800;
+}
+
+.fab {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: $color-mint;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.empty {
+  padding: 120px 32px;
+  text-align: center;
+}
+
+.empty-text {
+  color: $color-muted;
+  font-size: 26px;
+}
+
+.list {
+  padding: 12px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.trip-card {
+  background: $color-card;
+  border: 1px solid $color-border;
+  border-radius: $radius-card;
+  overflow: hidden;
+}
+
+.cover {
+  height: 160px;
+  background: linear-gradient(160deg, #8fe0ce, #4c9fdb);
+}
+
+.card-body {
+  padding: 20px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.trip-title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.trip-meta {
+  font-size: 24px;
+  color: $color-muted;
+}

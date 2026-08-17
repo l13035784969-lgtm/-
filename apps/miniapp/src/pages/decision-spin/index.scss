@@ -1,0 +1,132 @@
+@import '../../styles/tokens.scss';
+
+.spin-page {
+  min-height: 100vh;
+  background: $color-paper;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 32px;
+}
+
+.spin-title {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.spin-sub {
+  margin-top: 8px;
+  font-size: 24px;
+  color: $color-muted;
+}
+
+.topic-input {
+  margin-top: 40px;
+  width: 100%;
+  background: $color-card;
+  border: 1px solid $color-border;
+  border-radius: 16px;
+  padding: 22px 24px;
+  font-size: 28px;
+  box-sizing: border-box;
+}
+
+.member-picker {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.member-chip {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 14px 28px;
+  border-radius: 999px;
+  border: 1px solid $color-border;
+  color: $color-muted;
+
+  &.on {
+    background: $color-mint;
+    color: #fff;
+    border-color: $color-mint;
+  }
+}
+
+.spin-btn {
+  margin-top: 48px;
+  background: $color-coral;
+  color: #fff;
+  font-weight: 800;
+  font-size: 30px;
+  padding: 24px 64px;
+  border-radius: 999px;
+}
+
+.wheel {
+  margin-top: 80px;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: conic-gradient(
+    $color-mint 0 25%,
+    $color-sky 25% 50%,
+    $color-coral 50% 66.6%,
+    $color-mint 66.6% 83.3%,
+    $color-sky 83.3% 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.spinning {
+    animation: spin 0.8s linear infinite;
+  }
+}
+
+.wheel-hint {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.result {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.result-who {
+  font-size: 34px;
+  font-weight: 800;
+  color: $color-coral-dark;
+}
+
+.result-sub {
+  font-size: 24px;
+  color: $color-muted;
+}
+
+.reset-btn {
+  margin-top: 32px;
+  background: $color-mint-tint;
+  color: $color-mint-dark;
+  font-weight: 800;
+  font-size: 26px;
+  padding: 18px 48px;
+  border-radius: 999px;
+}

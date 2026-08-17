@@ -1,0 +1,26 @@
+// 视觉风格 token —— 架构文档 2.4 节已确认，全局唯一一套配色，不做深色模式。
+// 图标风格已定为平面手绘 SVG（不做 3D/渐变/高光），组件里直接写死这些色值即可。
+
+$color-paper: #f5f3ea; // 背景
+$color-ink: #20302a; // 正文
+$color-muted: #6e7d74; // 次要文字
+$color-card: #ffffff;
+$color-border: #e9e4d5;
+
+$color-mint: #2fa98a; // 主色
+$color-mint-dark: #1f7a63;
+$color-mint-tint: #def3ea;
+
+$color-sky: #4c9fdb; // 辅助色
+$color-sky-dark: #215f86;
+$color-sky-tint: #e1f0fb;
+
+$color-coral: #ff8b63; // 命运轮盘专用点缀
+$color-coral-dark: #c15a34;
+$color-coral-tint: #ffe7da;
+
+$color-neutral-dark: #5c6b63;
+$color-neutral-tint: #e9eae2;
+
+$radius-card: 18px;
+$radius-badge: 10px;

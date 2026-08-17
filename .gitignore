@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.env
+.env.local
+*.log
+.DS_Store
+apps/miniapp/.temp/
+apps/miniapp/dist/
+apps/miniapp/.swc/
+coverage/
+*.tsbuildinfo

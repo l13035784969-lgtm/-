@@ -1,0 +1,7 @@
+@import './styles/tokens.scss';
+
+page {
+  background: $color-paper;
+  color: $color-ink;
+  font-size: 28px;
+}
