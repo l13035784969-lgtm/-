@@ -1,7 +1,8 @@
 node_modules/
 dist/
-.env
+# .env 是团队共享的默认配置（不含密钥），要提交；只有 .local 后缀的个人覆盖文件不进仓库
 .env.local
+.env.*.local
 *.log
 .DS_Store
 apps/miniapp/.temp/

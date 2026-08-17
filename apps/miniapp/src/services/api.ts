@@ -11,8 +11,9 @@ import type {
   TripMember,
 } from '../types';
 
+// 按环境区分 API 地址：本地开发/联调走 .env.development 里的 TARO_APP_API_BASE，
 // 生产环境应该换成正式的 API 网关域名（架构文档 3 节：小程序需走微信备案域名）
-const BASE_URL = 'https://api.example.com';
+const BASE_URL = process.env.TARO_APP_API_BASE || 'https://api.example.com';
 
 /**
  * 统一请求封装。当前用户身份先靠本地存下来的 userId/memberId 走请求头占位，
